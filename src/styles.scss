@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "styles/colors.scss";
+@import "styles/global.scss";
+@import "styles/responsive.scss";
+@import "styles/typography.scss";
+
+:root {
+  --app-height: 100%;
+}
+
+html,
+body {
+  min-width: 280px;
+  height: var(--app-height, 100%);
+}
+
+body {
+  margin: 0 auto;
+  padding: 30px;
+  overflow-x: hidden;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-progress-bar {
+  z-index: 200;
+}
